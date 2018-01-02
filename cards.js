@@ -6,7 +6,13 @@ let createButton = document.getElementById("create");
 let output = document.getElementById("outputField")
 
 
+let printToDom = (inputText) =>{
+    let card = document.createElement("div");
+    card.setAttribute("id", "newCard");
+    console.log(card);
+}
 
+createButton.addEventListener('click', printToDom);
 
 
 
